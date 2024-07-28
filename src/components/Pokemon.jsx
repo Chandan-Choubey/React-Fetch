@@ -12,7 +12,7 @@ const Pokemon = () => {
     try {
       const response = await fetch(API);
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
 
       const detailedPokemonData = data.results.map(async (curPokemon) => {
         // console.log(curPokemon.url);
